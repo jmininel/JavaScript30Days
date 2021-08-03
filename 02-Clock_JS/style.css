@@ -17,16 +17,16 @@ body {
   .clock {
     width: 30rem;
     height: 30rem;
-    border: 20px solid white;
+    border: 20px solid #ffbc40;
     border-radius: 50%;
-    margin: 50px auto;
+    margin: 52px auto;
     position: relative;
     padding: 2rem;
     box-shadow:
       0 0 0 4px rgba(0,0,0,0.1),
-      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 0 3px #3574eb,
       inset 0 0 10px black,
-      0 0 10px rgba(0,0,0,0.2);
+      0 0 10px #3574eb;
   }
 
   .clock-face {
@@ -36,14 +36,16 @@ body {
     transform: translateY(-3px); /* account for the height of the clock hands */
   }
 
-  .hand {
-    width: 50%;
+
+   /*ponteiro*/
+  .hand {  
+    width: 43%;     /*controla a posicao do ponteiro*/ 
     height: 6px;
-    background: black;
+    background: rgb(241, 229, 229);
     position: absolute;
-    top: 50%;
-    transform-origin: 100%;
-    transform: rotate(90deg);
+    top: 50%;      /*controla a posicao do ponteiro*/ 
+    transform-origin: 100%;  /*centraliza o ponteiro*/
+    transform: rotate(90deg); /*o ponteiro comeca em 90 graus*/
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
   }
